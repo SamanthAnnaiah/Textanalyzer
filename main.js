@@ -1,5 +1,3 @@
-console.log("Hello World");
-
 let textdata = " ";
 
 let total_chars = 0;
@@ -22,7 +20,6 @@ fl3.addEventListener("mouseover", (e) => {
 
 function handlefl3hover(e) {
   let htarget = e.target.closest(".fl3_content");
-  console.log("hover: ", htarget);
   if (htarget) {
     htarget.title = htarget.dataset.fortitle;
   }
@@ -69,15 +66,6 @@ form1.addEventListener("submit", (e) => {
   }
   cdmap = "";
   cdmap = characterDensity(wsdata);
-  console.log(cdmap);
-  console.log("TextData: ", textdata);
-  console.log("TotalChars: ", total_chars);
-  console.log("TotalChars without space: ", total_chars_wspace);
-  console.log("TotalWords: ", total_words);
-  console.log("ReadingTime (in seconds) : ", total_words * 2);
-  console.log("UniqueWords: ", uword_count);
-  console.log("UniqueCharacters (case sensitive) : ", cdmap.size);
-  console.log("SentenceCount: ", sentence_count);
 
   processOutputs();
 });
@@ -99,7 +87,6 @@ function characterDensity(twsdata) {
   let gdata = twsdata.split("");
   gdata = gdata.sort();
   let smap = new Map();
-  console.log(gdata);
   let y = 0;
   for (let i = 0; i < gdata.length; i++) {
     if (y === 0 && i === gdata.lastIndexOf(gdata[i])) {
@@ -169,7 +156,6 @@ function buildletterdensity() {
     let cvalue = Number(value);
     mathsum = mathsum + cvalue;
     let lperc = ((cvalue / tletters) * 100).toFixed(4);
-    console.log(`Key and Value pairs: ${key} ${lperc}%`);
     let fl3div = document.createElement("div");
     fl3div.classList.add("fl3_content");
     fl3div.classList.add("fl1");
@@ -203,5 +189,4 @@ function buildletterdensity() {
 
     fl3.appendChild(fl3div);
   }
-  console.log("Total sum of chars from map: ", mathsum);
 }
