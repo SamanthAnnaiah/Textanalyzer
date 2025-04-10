@@ -84,8 +84,17 @@
   top: 0px;
   z-index: 99;
 }
-.fl3_perc {
-  color: rgb(235, 224, 16);
+
+.fl3_line_circle {
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  background-color: rgb(248, 245, 244);
+  font-family: "sbr";
+  font-weight: bolder;
+  position: absolute;
+  top: 0px;
+  z-index: 199;
 }
 
 .dnone {

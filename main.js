@@ -180,8 +180,14 @@ function buildletterdensity() {
     let wcalc = 1000 * (lperc / 100) + (lperc / 100) * 2;
     fl3div_line_perc.style.width = `${wcalc}px`;
 
+    let fl3div_line_circle = document.createElement("div");
+    fl3div_line_circle.classList.add("fl3_line_circle");
+    let pcalc = wcalc - 10;
+    fl3div_line_circle.style.left = `${pcalc}px`;
+
     fl3div_line_head.appendChild(fl3div_line);
     fl3div_line_head.appendChild(fl3div_line_perc);
+    fl3div_line_head.appendChild(fl3div_line_circle);
 
     fl3div.appendChild(fl3div_letter);
     fl3div.appendChild(fl3div_line_head);
