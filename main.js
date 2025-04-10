@@ -7,6 +7,22 @@ let uword_count = 0;
 let sentence_count = 0;
 let cdmap = "";
 
+let dmodecount = 1;
+let dmodediv = document.querySelector(".mbar_dmode");
+dmodediv.addEventListener("click", (e) => {
+  let thisbody = document.querySelector("body");
+  dmodecount++;
+  if (dmodecount % 2 == 0) {
+    thisbody = document.querySelector("body");
+    thisbody.style.backgroundColor = "rgb(57, 154, 141)";
+    dmodediv.style.backgroundColor = "rgb(97, 39, 39)";
+  } else {
+    thisbody = document.querySelector("body");
+    thisbody.style.backgroundColor = "hsla(250, 10%, 12%, 1)";
+    dmodediv.style.backgroundColor = "rgb(233, 225, 18)";
+  }
+});
+
 let fl2 = document.querySelector(".fl2");
 fl2.classList.remove("dflex");
 fl2.classList.add("dnone");
