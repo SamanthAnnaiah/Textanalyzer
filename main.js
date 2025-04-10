@@ -119,8 +119,9 @@ function processOutputs() {
 
   buildoutput(total_chars, "Total Characters");
   buildoutput(total_words, "Total Words");
-  buildoutput(uword_count, "Unique Characters");
+  buildoutput(uword_count, "Unique Words");
   buildoutput(sentence_count, "Total Sentences");
+  buildoutput(cdmap.size, "Unique Characters");
   buildletterdensity();
 }
 
