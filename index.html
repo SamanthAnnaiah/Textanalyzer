@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TextAnalyzer</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <meta name="Author" content="Samanth Annaiah" />
+    <meta
+      name="Description"
+      content="TextAnalyzer is a tool that analyzes text and provides various statistics about it."
+    />
+    <meta
+      name="Keywords"
+      content="text, analyzer, statistics, text analysis, text analyzer, text statistics"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/favlogo.png" />
+    <script src="/main.js" defer></script>
+  </head>
+  <body>
+    <div class="mbar">
+      <div class="mbar_logo">
+        <div>
+          <img
+            src="/images/favlogo.png"
+            width="50px"
+            height="50px"
+            alt="logo"
+            class="br1"
+          />
+        </div>
+        <div class="logo_head">Character Counter</div>
+      </div>
+      <div class="mbar_logo">
+        <img
+          src="/images/white-balance.png"
+          alt="moon"
+          width="32px"
+          height="32px"
+        />
+      </div>
+    </div>
+    <div class="logo_head_main">Text Analyzer</div>
+    <div>
+      <form action="" id="form1">
+        <div class="tarea_div">
+          <textarea
+            class="tarea"
+            name="textdata"
+            id="textdata"
+            cols="30"
+            rows="10"
+            placeholder="Enter text here..."
+          ></textarea>
+        </div>
+        <div class="tarea_div_below">
+          <div class="fl1">
+            <div class="inp1">
+              <input
+                type="checkbox"
+                name="exclude_spaces"
+                id="exclude_spaces"
+              />
+              <label for="exclude_spaces">Exclude spaces</label>
+            </div>
+            <div class="inp1">
+              <input type="number" name="max_chars" id="max_chars" />
+              <label for="max_chars">Max characters</label>
+            </div>
+          </div>
+          <button type="submit" class="btn1">Analyze</button>
+        </div>
+      </form>
+      <div class="fl2">
+        <!-- Output cards here start -->
+        <!-- <div class="outcard">
+          <div class="outcard_num"></div>
+          <div class="outcard_title"></div>
+        </div> -->
+        <!-- Output cards here stop -->
+      </div>
+    </div>
+    <div class="fl3_ldensity">
+      <!-- <h3>Letter Density</h3>
+      <div class="fl1 fl3_content">
+        <div class="fl3_letter">Letter</div>
+        <div class="fl3">
+        </div>
+        <div class="fl3_perc">Letter percentage</div>
+      </div> -->
+    </div>
+  </body>
+</html>

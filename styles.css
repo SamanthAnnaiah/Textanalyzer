@@ -1,0 +1,239 @@
+@font-face {
+  font-family: "smr";
+  src: url("/fonts/SpaceMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: "sbr";
+  src: url("/fonts/SpaceMono-Bold.ttf");
+}
+
+@font-face {
+  font-family: "sbi";
+  src: url("/fonts/SpaceMono-Italic.ttf");
+}
+
+.br1 {
+  border-radius: 40px;
+  border: 0px solid rgb(148, 139, 199);
+  box-shadow: 0 0 10px rgb(148, 139, 199);
+}
+
+.fl1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  margin: 12px;
+}
+.fl2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 12px;
+}
+.fl3 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 10px;
+  margin: 12px;
+  overflow: auto;
+}
+
+.fl3_ldensity {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: start;
+  justify-content: center;
+  overflow: auto;
+  margin-left: 150px;
+}
+
+.fl3_letter {
+  padding: 5px;
+  border: 0.5px solid white;
+  border-radius: 40px;
+  font-family: "sbr";
+  font-weight: bolder;
+}
+.fl3_head {
+  position: relative;
+}
+.fl3_line {
+  height: 10px;
+  width: 1000px;
+  border-radius: 10px;
+  background-color: hsla(275, 30%, 65%, 1);
+  font-family: "sbr";
+  font-weight: bolder;
+}
+.fl3_line_perc {
+  height: 10px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: rgb(247, 235, 5);
+  font-family: "sbr";
+  font-weight: bolder;
+  position: absolute;
+  top: 0px;
+  z-index: 99;
+}
+.fl3_perc {
+  color: rgb(235, 224, 16);
+}
+
+.dnone {
+  display: none;
+}
+.dflex {
+  display: flex;
+}
+
+.inp1 {
+  border-radius: 10px;
+  box-shadow: rgb(148, 139, 199) 0px 1px 2px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.btn1 {
+  border-radius: 10px;
+  box-shadow: rgba(231, 207, 21, 0.989) 0px 2px 14px 0px,
+    rgb(222, 212, 25) 0px 2px 6px 0px;
+  padding: 5px;
+  margin: 5px;
+  background-color: rgba(235, 224, 16, 0.781);
+  color: rgb(12, 12, 14);
+  font-family: "sbr";
+  font-weight: bolder;
+  font-size: 18px;
+  cursor: pointer;
+  transform: translateY(0px);
+  transition: transform 0.3s ease-in, background-color 0.3s ease-out,
+    box-shadow 0.1s ease;
+}
+
+.btn1:hover {
+  transform: translateY(-2px);
+  background-color: rgba(169, 235, 16, 0.989);
+  box-shadow: rgba(56, 203, 26, 0.989) 0px 2px 14px 0px;
+}
+
+.tarea_div {
+  border-radius: 10px;
+  border: 0px solid rgb(148, 139, 199);
+  box-shadow: 0 0 10px rgb(148, 139, 199);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.tarea_div_below {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+
+.tarea {
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgb(235, 224, 16);
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  background-color: rgba(71, 67, 95, 0.551);
+  padding: 10px;
+  color: hsla(0, 0%, 100%, 1);
+  overflow: auto;
+}
+
+body {
+  background-color: hsla(250, 10%, 12%, 1);
+  color: hsla(0, 0%, 100%, 1) !important;
+  font-family: "smr", sans-serif;
+}
+
+.mbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsla(0, 0%, 100%, 1);
+  font-family: "sbr", sans-serif;
+}
+
+.mbar_logo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  margin: 12px;
+}
+
+.logo_head {
+  text-shadow: 0 0 10px rgb(233, 225, 18);
+}
+
+.logo_head_main {
+  text-shadow: 0 0 10px rgb(233, 225, 18);
+  font-family: "sbr";
+  font-weight: bolder;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outcard {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-basis: 20%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background: linear-gradient(
+    to right,
+    /* Direction of the gradient */ rgb(197, 225, 85),
+    /* Starting color (your base) */ hsla(275, 30%, 65%, 1)
+      /* Ending color (less saturated) */
+  );
+  transition: background 3s ease-in;
+  box-shadow: rgb(168, 76, 233) 0px 3px 8px;
+  height: 200px;
+  border-radius: 12px;
+  color: rgb(24, 24, 18);
+  text-shadow: 0 0 10px rgb(233, 225, 18);
+  overflow: auto;
+}
+.outcard:hover {
+  background: linear-gradient(
+    to right,
+    /* Direction of the gradient */ rgb(225, 195, 85),
+    /* Starting color (your base) */ rgb(193, 139, 176)
+      /* Ending color (less saturated) */
+  );
+}
+
+.outcard_num {
+  font-size: 40px;
+  font-weight: bolder;
+  text-shadow: 0 0 14px rgb(37, 36, 36);
+}
+
+.outcard_title {
+  font-size: 20px;
+  font-weight: bolder;
+  text-shadow: 0 0 14px rgb(233, 225, 18);
+}
